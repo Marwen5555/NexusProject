@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nexus Digital Center</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="form.css" />
+    <!-- Font Awesome link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="form.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <a href="index.html">
+          <i class="fa-solid fa-building-columns"></i>
+        </a>
+        <nav class="navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <nav class="navForResponsive">
+          <i id="burger" class="fa-solid fa-bars">
+            <ul id="burgerList">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#trainings">Trainings</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <button class="btnCloseMenu">x</button>
+            </ul>
+          </i>
+        </nav>
+        <div class="icons">
+          <i class="panier fa-solid fa-cart-plus"></i>
+          <label>
+            <input class="toggle-checkbox" type="checkbox" checked />
+            <div class="toggle-switch"></div>
+          </label>
+        </div>
+      </div>
+    </header>
+    <section class="formulaire">
+      <form id="formOne" action="">
+        <h2>Welcome</h2>
+        <i class="fa-brands fa-ello fa-bounce"></i>
+        <input id="fname" type="text" placeholder="First Name" autofocus />
+        <input id="lname" type="text" placeholder="Last Name" />
+        <button id="btnNext">
+          Next &nbsp
+          <i class="fa-solid fa-arrow-right-long" style="color: #ffffff"></i>
+        </button>
+      </form>
+      <form id="formTwo" action="">
+        <h2>Proceed</h2>
+        <input type="tel" placeholder="Phone Number *" required />
+        <input type="email" placeholder="Mail Address *" required />
+        <div class="select">
+          <label class="option" for="options">Choose an Option :</label>
+          <select id="options" name="options">
+            <option value="digital-marketing">Digital Marketing</option>
+            <option value="fullstack-development">Fullstack Development</option>
+            <option value="Mobile app">Mobile Application</option>
+            <option value="frontend">FrontEnd Development</option>
+            <option value="graphic-design">UX/UI Design</option>
+            <option value="Data Science">Data Science</option>
+          </select>
+        </div>
+        <div class="check">
+          <input type="checkbox" required />
+          <p class="checkTerms">I agree for all the terms and conditions</p>
+        </div>
+        <button class="btnSubmit">Submit</button>
+      </form>
+    </section>
+    <div class="popup">
+      <img src="images/checked.png" alt="" />
+      <div class="content">
+        <p>Your Enroll Is Successful!</p>
+        <span>Check Your Mail Adress Right Now Please </span>
+      </div>
+      <button class="close">x</button>
+      <a href="index.html">Back To Home</a>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
